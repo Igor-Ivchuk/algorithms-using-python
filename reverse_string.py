@@ -2,7 +2,6 @@ import pytest
 
 
 def sr1(my_str):
-    print(my_str[::-1])
     return my_str[::-1]
 
 
@@ -14,9 +13,11 @@ def sr3(my_str):
     result = ''
     for char in my_str:
         result = char + result
-    print(result)
     return result
 
+def sr3(my_str):
+
+    return result
 @pytest.mark.parametrize("function", [sr1, sr2, sr3])
 @pytest.mark.parametrize("test_input,expected", [
     ("", ""),

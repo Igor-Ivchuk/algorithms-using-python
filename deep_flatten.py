@@ -7,4 +7,6 @@ def deep_flatten(arg):
             result.append(i)
     return result
 
-assert deep_flatten([1, [2], [[3], 4], 5]) == [1,2,3,4,5]
+
+assert deep_flatten([1, [2], [[3], 4], 5]) == [1, 2, 3, 4, 5]
+assert deep_flatten([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]

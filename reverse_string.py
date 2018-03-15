@@ -15,10 +15,15 @@ def sr3(my_str):
         result = char + result
     return result
 
-def sr3(my_str):
 
-    return result
-@pytest.mark.parametrize("function", [sr1, sr2, sr3])
+def sr4(my_str):
+    if len(my_str) == 0:
+        return my_str
+    else:
+        return sr4(my_str[1:]) + my_str[0]
+
+
+@pytest.mark.parametrize("function", [sr1, sr2, sr3, sr4])
 @pytest.mark.parametrize("test_input,expected", [
     ("", ""),
     (" ", " "),
